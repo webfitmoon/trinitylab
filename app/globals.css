@@ -295,3 +295,13 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .hero-copy .actions{justify-content:center}
 .trinity .hero-stack .video-demo{width:100%;max-width:1000px;margin:0}
 @media(max-width:767px){.trinity .hero-stack{gap:32px}}
+
+/* Full-bleed learning imagery inspired by the Mansmoment closing banners. */
+.trinity .final-panel{position:relative;isolation:isolate;overflow:hidden;min-height:460px}
+.trinity .final-panel-image{position:absolute;inset:0;z-index:-2;display:block;width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.trinity .final-panel::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,rgba(8,30,15,.86),rgba(8,30,15,.58))}
+.trinity .trial-panel::before{background:linear-gradient(110deg,rgba(25,94,32,.85),rgba(22,82,29,.73))}
+.trinity .final-panel h3{font-size:32px;line-height:1.35}
+.trinity .final-panel .btn:hover{background:var(--tint);border-color:var(--tint)}
+.trinity .final-panel .label{margin-top:0}
+@media(max-width:767px){.trinity .final-panel{min-height:420px}.trinity .final-panel h3{font-size:26px}}
