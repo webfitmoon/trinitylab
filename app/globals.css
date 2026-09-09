@@ -326,3 +326,15 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .study-reassurance p{margin-top:24px;color:#fff;max-width:72ch}
 .trinity .study-reassurance strong{color:#D5EBCB}
 @media(max-width:767px){.trinity .study-checkpoints{grid-template-columns:1fr;gap:24px}.trinity .study-checkpoints article{padding:28px 24px}.trinity .study-reassurance p{margin-top:20px}}
+
+/* Word art accompanying the reassurance message. */
+.trinity .reassurance-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:64px}
+.trinity .reassurance-copy{min-width:0}
+.trinity .reassurance-word-art{min-width:0;container-type:inline-size;display:flex;flex-direction:column;align-items:flex-start;padding:24px 0;color:#D5EBCB}
+.trinity .reassurance-word-art span{display:block;font-size:clamp(24px,11.3cqi,64px);font-weight:800;line-height:1.3;white-space:nowrap}
+.trinity .word-art-outline{color:transparent;-webkit-text-stroke:1px #D5EBCB}
+.trinity .word-art-arrow{width:38%;height:auto;margin:12px 0 16px 28%;color:#D5EBCB}
+.trinity .word-art-solid{color:#D5EBCB}
+@media(max-width:1023px){.trinity .reassurance-layout{grid-template-columns:1fr;gap:40px}.trinity .reassurance-word-art{width:min(100%,540px);padding:0}}
+@media(max-width:767px){.trinity .reassurance-layout{gap:40px}.trinity .word-art-arrow{margin-top:8px;margin-bottom:12px}}
+@media(forced-colors:active){.trinity .word-art-outline{color:CanvasText;-webkit-text-stroke:0}}
