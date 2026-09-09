@@ -311,7 +311,5 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .study-intro .section-head{margin:0;min-width:0}
 .trinity .study-photo{min-width:0}
 .trinity .study-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px}
-.trinity #training .study-photo{grid-column:1;grid-row:1}
-.trinity #training .study-intro .section-head{grid-column:2;grid-row:1}
 @media(max-width:1023px){.trinity .study-intro{gap:32px}}
-@media(max-width:767px){.trinity .study-intro{grid-template-columns:1fr;gap:24px;margin-bottom:32px}.trinity #training .study-photo,.trinity #training .study-intro .section-head{grid-column:auto;grid-row:auto}}
+@media(max-width:767px){.trinity .study-intro{grid-template-columns:1fr;gap:24px;margin-bottom:32px}}
