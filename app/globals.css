@@ -332,7 +332,7 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .reassurance-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:64px}
 .trinity .reassurance-copy{min-width:0;position:relative;z-index:1}
 .trinity .reassurance-word-art{position:absolute;right:3%;bottom:-.12em;width:min(48%,760px);container-type:inline-size;color:rgb(213 235 203 / 20%);user-select:none;pointer-events:none;font-size:clamp(40px,9vw,150px);line-height:1}
-.trinity .reassurance-word-art span{display:block;font-size:19cqi;font-weight:800;line-height:1;white-space:nowrap}
+.trinity .reassurance-word-art span{display:block;font-size:15cqi;font-weight:800;line-height:1;white-space:nowrap;text-align:right}
 @media(max-width:1023px){.trinity .reassurance-layout{grid-template-columns:1fr;gap:0}.trinity .study-reassurance{padding-bottom:160px}.trinity .reassurance-word-art{width:min(75%,650px)}}
 @media(max-width:767px){.trinity .study-reassurance{padding-bottom:140px}.trinity .reassurance-word-art{right:20px;width:calc(100% - 40px)}}
 
