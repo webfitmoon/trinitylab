@@ -316,11 +316,13 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 
 /* Study habits, reassurance, then the route back to practice. */
 .trinity .study-checkpoints{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
-.trinity .study-checkpoints article{border-top:1px solid var(--border);padding-top:24px;min-width:0}
-.trinity .study-checkpoints .label{color:var(--muted);margin-bottom:12px}
-.trinity .study-checkpoints h3+p{margin-top:16px;color:var(--muted)}
-.trinity .study-reassurance{margin:48px 0;padding:40px;background:#fff;border-left:3px solid var(--primary)}
+.trinity .study-checkpoints article{padding:32px;border-radius:12px;min-width:0;background:#173F25;color:#fff}
+.trinity .study-checkpoints article:nth-child(2){background:#245E31}
+.trinity .study-checkpoints article:nth-child(3){background:#327B3A}
+.trinity .study-checkpoints .label{color:#D5EBCB;margin-bottom:24px;font-size:28px;line-height:1;font-weight:700;font-variant-numeric:tabular-nums}
+.trinity .study-checkpoints h3+p{margin-top:16px;color:#fff}
+.trinity .study-reassurance{margin:48px 0 0;padding:40px;background:#fff;border-left:3px solid var(--primary)}
 .trinity .study-reassurance h3{font-size:30px;line-height:1.4}
 .trinity .study-reassurance p{margin-top:20px;color:var(--muted);max-width:72ch}
 .trinity .study-reassurance strong{color:var(--ink)}
-@media(max-width:767px){.trinity .study-checkpoints{grid-template-columns:1fr;gap:24px}.trinity .study-reassurance{margin:32px 0;padding:28px 24px}.trinity .study-reassurance h3{font-size:26px}}
+@media(max-width:767px){.trinity .study-checkpoints{grid-template-columns:1fr;gap:24px}.trinity .study-checkpoints article{padding:28px 24px}.trinity .study-reassurance{margin:32px 0 0;padding:28px 24px}.trinity .study-reassurance h3{font-size:26px}}
