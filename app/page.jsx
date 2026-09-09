@@ -2,7 +2,6 @@ import SiteHeader from "../components/site-header";
 import HeroSection from "../components/hero-section";
 import PerspectiveSection from "../components/perspective-section";
 import ProgramSection from "../components/program-section";
-import BrandInterlude from "../components/brand-interlude";
 import TrainingSection from "../components/training-section";
 import ComparisonSection from "../components/comparison-section";
 import ProofSection from "../components/proof-section";
@@ -16,7 +15,6 @@ export default function HomePage() {
     <main id="main"><HeroSection />
 <PerspectiveSection />
 <ProgramSection />
-<BrandInterlude />
 <TrainingSection />
 <ComparisonSection />
 <ProofSection />
