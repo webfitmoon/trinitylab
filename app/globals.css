@@ -335,3 +335,16 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .reassurance-word-art span{display:block;font-size:19cqi;font-weight:800;line-height:1;white-space:nowrap}
 @media(max-width:1023px){.trinity .reassurance-layout{grid-template-columns:1fr;gap:0}.trinity .study-reassurance{padding-bottom:160px}.trinity .reassurance-word-art{width:min(75%,650px)}}
 @media(max-width:767px){.trinity .study-reassurance{padding-bottom:140px}.trinity .reassurance-word-art{right:20px;width:calc(100% - 40px)}}
+
+/* Each section has a distinct role: walkthrough, tools, then getting started. */
+.trinity .review-walkthrough{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+.trinity .review-steps li{grid-template-columns:28px minmax(0,1fr);gap:16px;padding:24px 0}
+.trinity .review-steps h3{font-size:22px}
+.trinity .review-walkthrough .real-screen{margin:0;min-width:0}
+.trinity .review-walkthrough .real-screen img{max-height:560px}
+.trinity .study-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.trinity .study-tools article{border-top:1px solid var(--border);padding:28px 0;min-width:0}
+.trinity .study-tools .label{font-size:13px;color:var(--muted);margin-bottom:20px}
+.trinity .study-tools h3+p{margin-top:16px;color:var(--muted)}
+.trinity .final-actions{grid-template-columns:1.2fr 1fr}
+@media(max-width:1023px){.trinity .review-walkthrough{grid-template-columns:1fr;gap:32px}.trinity .study-tools{grid-template-columns:1fr;gap:0}.trinity .final-actions{grid-template-columns:1fr}}

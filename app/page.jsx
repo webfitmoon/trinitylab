@@ -3,8 +3,6 @@ import HeroSection from "../components/hero-section";
 import PerspectiveSection from "../components/perspective-section";
 import ProgramSection from "../components/program-section";
 import TrainingSection from "../components/training-section";
-import ComparisonSection from "../components/comparison-section";
-import ProofSection from "../components/proof-section";
 import FaqSection from "../components/faq-section";
 import StartSection from "../components/start-section";
 
@@ -14,10 +12,8 @@ export default function HomePage() {
     <SiteHeader />
     <main id="main"><HeroSection />
 <PerspectiveSection />
-<ProgramSection />
 <TrainingSection />
-<ComparisonSection />
-<ProofSection />
+<ProgramSection />
 <FaqSection />
 <StartSection /></main>
     <footer className="footer"><div className="wrap"><strong>{"트리니티에듀랩"}</strong><p>{"© 2026 트리니티에듀랩"}<br />{"메인 데모 · 2026.09.08"}</p></div></footer>
