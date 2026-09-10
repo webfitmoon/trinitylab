@@ -348,3 +348,5 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .study-tools h3+p{margin-top:16px;color:var(--muted)}
 .trinity .final-actions{grid-template-columns:1.2fr 1fr}
 @media(max-width:1023px){.trinity .review-walkthrough{grid-template-columns:1fr;gap:32px}.trinity .study-tools{grid-template-columns:1fr;gap:0}.trinity .final-actions{grid-template-columns:1fr}}
+
+.trinity .hero-review{width:100%;max-width:1000px;margin:0}.trinity .hero-review img{max-height:580px}.trinity #program .video-demo{max-width:900px;margin:40px auto 0}.record-guide{padding:28px;background:#F0F7EC;border:1px solid #D7E6D0;border-radius:12px}.record-guide dl{margin:20px 0 0}.record-guide dt{font-weight:700;margin-top:18px}.record-guide dd{margin:6px 0 0;color:var(--muted)}.start-mode-note{padding:20px 24px;border-left:3px solid var(--primary);background:#F0F7EC;max-width:none;margin:0 0 32px;font-size:14px}

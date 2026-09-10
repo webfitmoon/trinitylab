@@ -4,7 +4,7 @@ export default function TrainingSection() {
     <div className="review-walkthrough"><ol className="training review-steps">
       <li><div><h3>시험지를 풀고 결과를 확인합니다.</h3><p>원하는 회차를 골라 풀어보세요. 채점 결과에서 맞힌 문항과 다시 확인할 문항을 구분할 수 있습니다.</p></div></li>
       <li><div><h3>해설 전에 힌트로 다시 생각합니다.</h3><p>막힌 문항의 힌트를 읽고 풀이를 시도해 보세요. 그래도 어렵다면 해설을 확인합니다.</p></div></li>
-      <li><div><h3>결과를 저장하고, 오답을 다시 풉니다.</h3><p>로그인 후 완료한 회차 결과를 계정에 저장하세요. 저장한 기록에서 틀린 문항을 골라 복습합니다.</p></div></li>
-    </ol><figure className="real-screen"><a href="/media/result-hint-1180.png" target="_blank" rel="noopener" aria-label="채점 결과와 힌트 화면 크게 보기"><img src="/media/result-hint-1180.png" alt="다시 확인할 문항에 힌트와 해설 보기 버튼이 표시된 실제 결과 화면" width="1180" height="820" loading="lazy" /></a><figcaption>실제 앱 화면 · 채점 결과와 힌트<span>크게 보기 ↗</span></figcaption></figure></div>
+      <li><div><h3>결과를 저장하고, 오답을 다시 풉니다.</h3><p>회차를 완료한 뒤 로그인하고 계정 저장을 선택합니다. 일부 단원·번호 연습은 회차 결과로 남지 않으므로, 시작 전 저장 안내를 확인하세요.</p></div></li>
+    </ol><aside className="record-guide" aria-labelledby="record-title"><h3 id="record-title">무엇이 어디에 남나요?</h3><dl><dt>완료한 회차 결과</dt><dd>로그인 후 계정 저장을 선택합니다.</dd><dt>일부 단원·번호 연습</dt><dd>회차 결과로 저장되지 않습니다. 시작 화면의 안내를 확인하세요.</dd><dt>문항별 풀이 시간</dt><dd>이 기기 브라우저에 남습니다. ‘오래 걸린 문항 다시 보기’에서 연습할 수 있으며, 재풀이 결과는 기록으로 저장하지 않습니다.</dd><dt>손풀이</dt><dd>로그인 후 읽은 답을 확인해 제출한 손풀이가 저장됩니다. 제출 전 필기는 이동·새로고침 시 사라질 수 있습니다.</dd></dl></aside></div>
   </div></section>;
 }
