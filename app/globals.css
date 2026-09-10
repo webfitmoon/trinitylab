@@ -413,3 +413,6 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity #perspective .study-checkpoints article,.trinity #perspective .study-checkpoints article:nth-child(2),.trinity #perspective .study-checkpoints article:nth-child(3){background:rgba(10,43,21,.78);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px)}
 .trinity #perspective .study-checkpoints .label{color:#ccefc9}
 @media(max-width:767px){.trinity #perspective{background-position:62% center}.trinity #perspective::before{background:rgba(5,24,12,.82)}.trinity #perspective .study-intro{margin-bottom:32px}}
+
+.trinity .review-walkthrough{grid-template-columns:minmax(0,1fr);max-width:900px;gap:40px}
+.trinity .record-guide{width:100%}
