@@ -432,6 +432,16 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .study-tools h3{font-size:clamp(25px,2.5vw,34px)}
 @media(max-width:767px){.trinity .study-tools article{grid-template-columns:1fr;gap:24px;padding:36px 0}.trinity .study-tools img{aspect-ratio:4/3}}
 
+.program-guide-nav{display:flex;flex-wrap:wrap;gap:12px 28px;padding-block:28px;border-bottom:1px solid #cad8ca}
+.program-guide-nav a{padding:8px 0;color:#246533;font-weight:650}
+.program-guide [id]{scroll-margin-top:100px}
+.program-guide .subpage-split{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:start}
+.program-guide .subpage-split figure{position:sticky;top:110px}
+.program-guide .subpage-list{padding-left:24px}
+.program-guide-tip{margin-top:32px;padding:28px 32px;border-left:4px solid #329a37;background:#edf7ed}
+.program-guide-tip p{margin-bottom:0}
+@media(max-width:767px){.program-guide .subpage-split{grid-template-columns:1fr}.program-guide .subpage-split figure{position:static}.program-guide-tip{padding:24px}.program-guide-nav{gap:8px 20px}}
+
 /* Benefits bridge the product tools and the questions that follow. */
 .trinity .benefits-section{background:#e1f0dc}
 .trinity .benefits-section .section-head{max-width:920px}
