@@ -1,10 +1,10 @@
 export default function TrainingSection() {
   return <section className="section white" id="training"><div className="wrap">
-    <div className="section-head"><h2>틀린 문제를 발견했다면,<br />이렇게 다시 공부하세요.</h2><p>결과를 확인한 뒤 무엇을 하면 되는지, 세 단계로 살펴보세요.</p></div>
+    <div className="section-head"><h2>틀린 문제,<br />이렇게 다시 풀어보세요.</h2><p>채점에서 끝내지 않고, 해설 없이 다시 풀어내는 데까지 이어가세요.</p></div>
     <div className="review-walkthrough"><ol className="training review-steps">
-      <li><div><h3>시험지를 풀고 결과를 확인합니다.</h3><p>원하는 회차를 골라 풀어보세요. 채점 결과에서 맞힌 문항과 다시 확인할 문항을 구분할 수 있습니다.</p></div></li>
-      <li><div><h3>해설 전에 힌트로 다시 생각합니다.</h3><p>막힌 문항의 힌트를 읽고 풀이를 시도해 보세요. 그래도 어렵다면 해설을 확인합니다.</p></div></li>
-      <li><div><h3>결과를 저장하고, 오답을 다시 풉니다.</h3><p>회차를 완료한 뒤 로그인하고 계정 저장을 선택합니다. 일부 단원·번호 연습은 회차 결과로 남지 않으므로, 시작 전 저장 안내를 확인하세요.</p></div></li>
+      <li><div><h3>틀린 문제부터 확인하세요.</h3><p>시험지를 풀고 채점 결과를 살펴보세요. 틀린 문제와 시간이 오래 걸린 문제를 골라 어디에서 막혔는지 떠올려 봅니다.</p></div></li>
+      <li><div><h3>해설을 보기 전에, 힌트로 다시 시도하세요.</h3><p>첫 줄이 막히면 힌트를 확인하세요. 문제의 조건을 다시 읽고, 다음 식을 직접 적어보세요.</p></div></li>
+      <li><div><h3>해설을 이해했다면, 가리고 다시 풀어보세요.</h3><p>힌트를 봐도 어렵다면 해설과 자신의 풀이를 비교하세요. 이해한 뒤에는 해설을 가리고 처음부터 끝까지 직접 풀어봅니다.</p></div></li>
     </ol></div>
   </div></section>;
 }

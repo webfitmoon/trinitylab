@@ -292,6 +292,8 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .hero-stack{display:flex;flex-direction:column;align-items:center;gap:48px}
 .trinity .hero-copy{width:100%;text-align:center}
 .trinity .hero-copy h1,.trinity .hero-copy p{margin-left:auto;margin-right:auto}
+.trinity .hero-copy h1{max-width:1000px}
+.trinity .hero-copy .lead{max-width:760px}
 .trinity .hero-copy .actions{justify-content:center}
 .trinity .hero-stack .video-demo{width:100%;max-width:1000px;margin:0}
 @media(max-width:767px){.trinity .hero-stack{gap:32px}}

@@ -38,9 +38,9 @@ export default function StudyCheck() {
         <div className="diagnosis-choices">{question.options.map((option, index) => <button className="diagnosis-choice" key={option.text} type="button" disabled={busy} aria-pressed={answers[step] === index} onClick={() => choose(index)}><span aria-hidden="true">{index + 1}</span>{option.text}</button>)}</div>
       </fieldset>
       {step > 0 && <button className="btn secondary" type="button" disabled={busy} onClick={() => {setStep(step - 1);focusQuestion();}}>이전 질문</button>}
-    </> : <section ref={resultRef} tabIndex={-1} className="check-result" aria-label="학습 유형 진단 결과">
+    </> : <section ref={resultRef} tabIndex={-1} className="check-result" aria-label="공부 습관 점검 결과">
       <DiagnosisResult type={result.type} percentages={result.percentages} />
-      <div className="diagnosis-restart"><button type="button" onClick={() => {setResult(null);setStep(0);focusQuestion();}}>답변 다시 확인하기</button><button type="button" onClick={restart}>처음부터 다시 진단</button></div>
+      <div className="diagnosis-restart"><button type="button" onClick={() => {setResult(null);setStep(0);focusQuestion();}}>답변 다시 확인하기</button><button type="button" onClick={restart}>처음부터 다시 점검</button></div>
     </section>}
   </div>;
 }
