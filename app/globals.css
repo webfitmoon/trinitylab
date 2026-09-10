@@ -408,7 +408,8 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 /* The study photo now carries the whole question section. */
 .trinity #perspective{position:relative;isolation:isolate;background:url('/media/study-review-20260909.webp') center 44%/cover no-repeat;color:#fff}
 .trinity #perspective::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,24,12,.9) 0%,rgba(7,31,15,.82) 48%,rgba(7,25,13,.7) 100%)}
-.trinity #perspective .study-intro{display:block;max-width:720px;margin-bottom:48px}
+.trinity #perspective .study-intro{display:block;max-width:720px;margin:0 auto 48px;text-align:center}
+.trinity #perspective .study-intro .section-head p{margin-inline:auto}
 .trinity #perspective .section-head p{color:rgba(255,255,255,.82)}
 .trinity #perspective .study-checkpoints article,.trinity #perspective .study-checkpoints article:nth-child(2),.trinity #perspective .study-checkpoints article:nth-child(3){background:rgba(10,43,21,.78);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px)}
 .trinity #perspective .study-checkpoints .label{color:#ccefc9}
