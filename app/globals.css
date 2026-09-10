@@ -9,7 +9,7 @@
   --accent: #D9EFD7;
   --surface: #FFFFFF;
   --canvas: #F6F8F5;
-  --on-primary: #061008;
+  --on-primary: #FFFFFF;
   --border: #83918E;
   --disabled-bg: #E7EBEF;
   --disabled-text: #56616E;
@@ -423,6 +423,8 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 
 .trinity .study-tools{grid-template-columns:minmax(0,1fr);gap:0}
 .trinity .study-tools article{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:64px;align-items:center;padding:48px 0;border-top:1px solid var(--border)}
+.trinity .study-tools figure{order:1}
+.trinity .study-tools .study-tool-copy{order:2}
 .trinity .study-tools article:last-child{border-bottom:1px solid var(--border)}
 .trinity .study-tools figure{margin:0;min-width:0;overflow:hidden;border:1px solid #d7e3d4;border-radius:12px;background:#f7f8f3}
 .trinity .study-tools img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top}
@@ -435,9 +437,10 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .benefits-section .section-head p{font-size:18px;color:#355b3c}
 .trinity .benefit-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .trinity .benefit-card{position:relative;min-width:0;min-height:250px;padding:36px 30px 32px;border:1px solid #c2d8bc;border-radius:12px;background:#fff}
-.trinity .benefit-mark{display:block;width:42px;height:7px;margin-bottom:38px;border-radius:999px;background:#329a37}
-.trinity .benefit-card:nth-child(2n) .benefit-mark{background:#245e31}
+.trinity .benefit-icon{display:grid;place-items:center;width:52px;height:52px;margin-bottom:30px;border-radius:50%;background:#e1f0dc;color:#245e31}
+.trinity .benefit-icon svg{width:27px;height:27px}
+.trinity .benefit-card:nth-child(2n) .benefit-icon{background:#d5ebd0;color:#173f25}
 .trinity .benefit-card h3{font-size:24px;line-height:1.4}
 .trinity .benefit-card p{margin-top:16px;color:var(--muted)}
 @media(max-width:1023px){.trinity .benefit-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:767px){.trinity .benefits-section .section-head p{font-size:16px}.trinity .benefit-cards{grid-template-columns:1fr;gap:14px}.trinity .benefit-card{min-height:0;padding:28px 24px}.trinity .benefit-mark{width:34px;height:6px;margin-bottom:24px}.trinity .benefit-card h3{font-size:22px}}
+@media(max-width:767px){.trinity .benefits-section .section-head p{font-size:16px}.trinity .benefit-cards{grid-template-columns:1fr;gap:14px}.trinity .benefit-card{min-height:0;padding:28px 24px}.trinity .benefit-icon{width:46px;height:46px;margin-bottom:24px}.trinity .benefit-icon svg{width:24px;height:24px}.trinity .benefit-card h3{font-size:22px}}
