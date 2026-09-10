@@ -40,7 +40,7 @@ export default function StudyCheck() {
       {step > 0 && <button className="btn secondary" type="button" disabled={busy} onClick={() => {setStep(step - 1);focusQuestion();}}>이전 질문</button>}
     </> : <section ref={resultRef} tabIndex={-1} className="check-result" aria-label="공부 습관 점검 결과">
       <DiagnosisResult type={result.type} percentages={result.percentages} />
-      <div className="diagnosis-restart"><button type="button" onClick={() => {setResult(null);setStep(0);focusQuestion();}}>답변 다시 확인하기</button><button type="button" onClick={restart}>처음부터 다시 점검</button></div>
+      <div className="diagnosis-restart"><button type="button" onClick={restart}>다시 점검하기</button></div>
     </section>}
   </div>;
 }
