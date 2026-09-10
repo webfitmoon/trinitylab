@@ -402,3 +402,5 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
  .check-result { padding: 24px 18px; }
  .study-check legend { font-size: 20px; }
 }
+
+.check-progress-bar{display:block;width:100%;height:8px;accent-color:var(--primary);margin:0 0 32px}.check-navigation{display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap}.study-check legend{scroll-margin-top:120px}.study-check legend:focus{outline:none}.study-check .check-result{margin-top:0}@media(max-width:767px){.check-navigation .btn{flex:1}}

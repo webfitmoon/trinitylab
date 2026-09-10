@@ -9,10 +9,52 @@ const questions = [
   { title: "다음에 풀 문제를 고를 때는?", options: ["늘 하던 순서대로 풀어요", "틀린 문제를 생각나면 골라요", "부족한 단원이나 문항을 골라요"], action: "연습 범위를 한 번 좁혀보세요.", detail: "시험지 전체가 부담스럽다면 단원이나 문항 번호로 필요한 범위를 고르세요. 문항 수와 기록 저장 여부를 시작 전에 확인합니다." },
 ];
 export default function StudyCheck() {
-  const [answers, setAnswers] = useState({}); const [result, setResult] = useState(false); const resultRef = useRef(null);
-  function submit(event) { event.preventDefault(); setResult(true); requestAnimationFrame(() => resultRef.current?.focus()); }
+  const [answers, setAnswers] = useState({});
+  const [step, setStep] = useState(0);
+  const [result, setResult] = useState(false);
+  const questionRef = useRef(null);
+  const resultRef = useRef(null);
+  const question = questions[step];
   const selected = questions.filter((_, i) => answers[i] !== "2");
-  return <div className="study-check"><p>총 5문항 · 각 질문에서 하나씩 선택해 주세요.</p><form onSubmit={submit}>{questions.map((q, i) => <fieldset key={q.title}><legend><span>{i + 1} / 5</span> {q.title}</legend>{q.options.map((text, j) => <label key={text}><input type="radio" name={`question-${i}`} value={j} required checked={answers[i] === String(j)} onChange={event => { setAnswers({ ...answers, [i]: event.target.value }); setResult(false); }} /><span>{text}</span></label>)}</fieldset>)}<button className="btn" type="submit">다음 연습 방향 보기</button></form>
-    {result && <section ref={resultRef} tabIndex={-1} className="check-result" aria-label="자기점검 결과"><h2>다음 연습에서 하나만 시도해 보세요.</h2><p>선택한 응답을 바탕으로 정리했습니다. 점수나 능력 등급을 매기는 결과는 아닙니다.</p>{selected.length ? selected.map(q => <article key={q.title}><h3>{q.action}</h3><p>{q.detail}</p></article>) : <article><h3>지금의 복습 습관을 다른 문제에서도 이어가세요.</h3><p>응답에서는 다시 풀기, 기록, 연습 범위 선택을 하고 있다고 답했습니다. 낯선 시험지에서도 같은 과정을 이어갈 수 있는지 확인해 보세요.</p></article>}<Link className="btn" href="/trial">이 방향으로 연습 시작하기</Link><button className="text-link" type="button" onClick={() => { setAnswers({}); setResult(false); document.querySelector('.study-check input')?.focus(); }}>처음부터 다시 점검</button></section>}
+
+  function focusQuestion() { requestAnimationFrame(() => questionRef.current?.focus()); }
+  function submit(event) {
+    event.preventDefault();
+    if (answers[step] === undefined) return;
+    if (step < questions.length - 1) {
+      setStep(step + 1);
+      focusQuestion();
+    } else {
+      setResult(true);
+      requestAnimationFrame(() => resultRef.current?.focus());
+    }
+  }
+  function restart() { setAnswers({}); setStep(0); setResult(false); focusQuestion(); }
+
+  return <div className="study-check">
+    {!result ? <>
+      <p className="check-progress" aria-live="polite">총 {questions.length}문항 중 {step + 1}번째 질문</p>
+      <progress className="check-progress-bar" value={step + 1} max={questions.length} aria-label="질문 진행 상황" />
+      <form onSubmit={submit}>
+        <fieldset key={step}>
+          <legend ref={questionRef} tabIndex={-1}>{question.title}</legend>
+          {question.options.map((text, j) => <label key={text}>
+            <input type="radio" name={`question-${step}`} value={j} required checked={answers[step] === String(j)} onChange={event => setAnswers({ ...answers, [step]: event.target.value })} />
+            <span>{text}</span>
+          </label>)}
+        </fieldset>
+        <div className="check-navigation">
+          {step > 0 && <button className="btn secondary" type="button" onClick={() => { setStep(step - 1); focusQuestion(); }}>이전 질문</button>}
+          <button className="btn" type="submit">{step === questions.length - 1 ? "결과 보기" : "다음 질문"}</button>
+        </div>
+      </form>
+    </> : <section ref={resultRef} tabIndex={-1} className="check-result" aria-label="자기점검 결과">
+      <h2>다음 연습에서 하나만 시도해 보세요.</h2>
+      <p>선택한 응답을 바탕으로 정리했습니다. 점수나 능력 등급을 매기는 결과는 아닙니다.</p>
+      {selected.length ? selected.map(q => <article key={q.title}><h3>{q.action}</h3><p>{q.detail}</p></article>) : <article><h3>지금의 복습 습관을 다른 문제에서도 이어가세요.</h3><p>응답에서는 다시 풀기, 기록, 연습 범위 선택을 하고 있다고 답했습니다. 낯선 시험지에서도 같은 과정을 이어갈 수 있는지 확인해 보세요.</p></article>}
+      <Link className="btn" href="/trial">이 방향으로 연습 시작하기</Link>
+      <button className="text-link" type="button" onClick={() => { setResult(false); focusQuestion(); }}>답변 다시 확인하기</button>
+      <button className="text-link" type="button" onClick={restart}>처음부터 다시 점검</button>
+    </section>}
   </div>;
 }
