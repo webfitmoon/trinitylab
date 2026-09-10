@@ -428,3 +428,16 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .study-tools img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top}
 .trinity .study-tools h3{font-size:clamp(25px,2.5vw,34px)}
 @media(max-width:767px){.trinity .study-tools article{grid-template-columns:1fr;gap:24px;padding:36px 0}.trinity .study-tools img{aspect-ratio:4/3}}
+
+/* Benefits bridge the product tools and the questions that follow. */
+.trinity .benefits-section{background:#e1f0dc}
+.trinity .benefits-section .section-head{max-width:920px}
+.trinity .benefits-section .section-head p{font-size:18px;color:#355b3c}
+.trinity .benefit-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.trinity .benefit-card{position:relative;min-width:0;min-height:250px;padding:36px 30px 32px;border:1px solid #c2d8bc;border-radius:12px;background:#fff}
+.trinity .benefit-mark{display:block;width:42px;height:7px;margin-bottom:38px;border-radius:999px;background:#329a37}
+.trinity .benefit-card:nth-child(2n) .benefit-mark{background:#245e31}
+.trinity .benefit-card h3{font-size:24px;line-height:1.4}
+.trinity .benefit-card p{margin-top:16px;color:var(--muted)}
+@media(max-width:1023px){.trinity .benefit-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){.trinity .benefits-section .section-head p{font-size:16px}.trinity .benefit-cards{grid-template-columns:1fr;gap:14px}.trinity .benefit-card{min-height:0;padding:28px 24px}.trinity .benefit-mark{width:34px;height:6px;margin-bottom:24px}.trinity .benefit-card h3{font-size:22px}}
