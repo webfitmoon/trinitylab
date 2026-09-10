@@ -553,6 +553,8 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .program-guide > .subpage-block { background: #fff; }
 .program-guide > .program-guide-cta { background: var(--page-accent); color: #fff; }
 .program-guide-cta h2, .program-guide-cta p, .program-guide-cta .text-link { color: #fff; }
+.program-guide-cta h2 { margin-bottom: 10px; }
+.program-guide-cta h2 + p { margin-top: 0; }
 .program-guide-cta .btn { background: #fff; color: var(--page-accent); border-color: #fff; }
 .program-guide-cta .btn:hover { background: #edf7ed; border-color: #edf7ed; }
 .program-guide-cta .text-link { margin-top: 0; text-decoration: underline; text-underline-offset: 4px; }
