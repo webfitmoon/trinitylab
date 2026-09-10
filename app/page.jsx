@@ -4,7 +4,7 @@ import PerspectiveSection from "../components/perspective-section";
 import ProgramSection from "../components/program-section";
 import TrainingSection from "../components/training-section";
 import BenefitsSection from "../components/benefits-section";
-import FaqSection from "../components/faq-section";
+import HomeFaqSection from "../components/home-faq-section";
 import StartSection from "../components/start-section";
 
 export default function HomePage() {
@@ -16,7 +16,7 @@ export default function HomePage() {
 <TrainingSection />
 <ProgramSection />
 <BenefitsSection />
-<FaqSection />
+<HomeFaqSection />
 <StartSection /></main>
     <footer className="footer"><div className="wrap"><strong>{"트리니티에듀랩"}</strong><p>{"© 2026 트리니티에듀랩"}<br />{"메인 데모 · 2026.09.08"}</p></div></footer>
   </>;

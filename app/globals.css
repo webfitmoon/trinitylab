@@ -450,6 +450,15 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .program-guide-tip p{margin-bottom:0}
 @media(max-width:767px){.program-guide .subpage-split{grid-template-columns:1fr}.program-guide .subpage-split figure{position:static}.program-guide-tip{padding:24px}.program-guide-nav{gap:8px 20px}}
 
+.home-faq-layout{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:64px;align-items:start}
+.home-faq-layout .section-head{margin:0;gap:20px}
+.home-faq-layout .faq{width:100%;min-width:0;margin:0;border-top:1px solid var(--border)}
+.home-faq-answer{padding-bottom:24px}
+.home-faq-answer p{padding:0;line-height:1.85}
+.home-faq-answer p+p{margin-top:16px}
+.home-faq-answer a{color:#246533;font-weight:650}
+@media(max-width:767px){.home-faq-layout{grid-template-columns:1fr;gap:32px}.home-faq-layout h2 br{display:none}}
+
 /* Benefits bridge the product tools and the questions that follow. */
 .trinity .benefits-section{background:#e1f0dc}
 .trinity .benefits-section .section-head{max-width:920px}
