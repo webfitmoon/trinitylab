@@ -33,7 +33,6 @@ export default function StudyCheck() {
     {!result ? <>
       <p className="check-progress" aria-live="polite">총 {config.questions.length}문항 중 {step + 1}번째 질문</p>
       <progress className="check-progress-bar" value={step + 1} max={config.questions.length} aria-label="질문 진행 상황" />
-      <p className="note">가장 가까운 답 하나를 선택하면 다음 질문으로 넘어갑니다.</p>
       <fieldset key={step}><legend ref={questionRef} tabIndex={-1}>{question.title}</legend>
         <div className="diagnosis-choices">{question.options.map((option, index) => <button className="diagnosis-choice" key={option.text} type="button" disabled={busy} aria-pressed={answers[step] === index} onClick={() => choose(index)}><span aria-hidden="true">{index + 1}</span>{option.text}</button>)}</div>
       </fieldset>
