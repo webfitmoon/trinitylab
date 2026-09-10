@@ -432,7 +432,7 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .study-tools h3{font-size:clamp(25px,2.5vw,34px)}
 @media(max-width:767px){.trinity .study-tools article{grid-template-columns:1fr;gap:24px;padding:36px 0}.trinity .study-tools img{aspect-ratio:4/3}}
 
-.trinity .subpage-intro-editorial{background:#fff;padding:36px 0 88px;border-bottom:1px solid #e4eae3}
+.trinity .subpage-intro-editorial{background:#fff;padding:88px 0;border-bottom:1px solid #e4eae3}
 .subpage-intro-editorial .breadcrumbs{margin-bottom:64px;color:var(--muted);font-size:13px}
 .subpage-intro-editorial .label{color:#246533;margin-bottom:20px}
 .subpage-intro-editorial h1{max-width:1000px;font-size:clamp(36px,4vw,56px);line-height:1.3;letter-spacing:-.045em}
