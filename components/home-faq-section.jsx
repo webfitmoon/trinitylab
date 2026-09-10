@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 const questions = [
   { title: "어떤 학생에게 맞나요?", paragraphs: ["수능 기출을 꾸준히 풀지만 비슷한 문제를 다시 틀리거나, 오답을 모아두고 복습을 미루는 고3 학생이 활용하기 좋습니다. 틀린 문제를 다시 풀고, 처음 막혔던 부분을 확인하는 연습에 사용해 보세요."] },
   { title: "어떤 기기로 사용할 수 있나요?", paragraphs: ["별도 설치 없이 휴대폰·노트북·태블릿에서 이용할 수 있습니다. 문제 위에 직접 쓰려면 태블릿을 가로로 놓고 펜을 사용하는 것이 편합니다."] },
@@ -9,8 +11,8 @@ const questions = [
 export default function HomeFaqSection() {
   return <section className="section home-faq-section" id="faq"><div className="wrap home-faq-layout">
     <div className="section-head"><h2>풀어보기 전에<br />궁금한 점</h2><p>비용과 로그인, 기록 저장까지,<br />시작 전에 알아둘 내용을 모았습니다.</p></div>
-    <div className="faq">{questions.map(question => <details key={question.title}><summary>{question.title}</summary><div className="home-faq-answer">{question.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</div></details>)}
-      <details><summary>궁금한 점이나 문제 오류는 어디로 문의하나요?</summary><div className="home-faq-answer"><p>학생과 학부모 모두 <a href="https://pf.kakao.com/_xoSQsX">카카오톡 채널</a>이나 <a href="mailto:sungmin.t@maths.study">이메일</a>로 문의할 수 있습니다. 학년과 사용하는 기기, 궁금한 내용을 함께 알려 주세요.</p><p>현재 공개 베타로 운영 중이며, 시작 화면에 검수 중인 문제 안내가 표시될 수 있습니다. 문제·해설에 오류가 의심되면 시험지와 문항 번호를 함께 알려 주세요.</p></div></details>
+    <div className="faq">{questions.map(question => <details key={question.title}><summary>{question.title}</summary><div className="home-faq-answer">{question.paragraphs.map(paragraph => <p key={paragraph}>{paragraph.split(/(?<=\.)\s+/).map((sentence, index) => <Fragment key={index}>{index > 0 && <br />}{sentence}</Fragment>)}</p>)}</div></details>)}
+      <details><summary>궁금한 점이나 문제 오류는 어디로 문의하나요?</summary><div className="home-faq-answer"><p>학생과 학부모 모두 <a href="https://pf.kakao.com/_xoSQsX">카카오톡 채널</a>이나 <a href="mailto:sungmin.t@maths.study">이메일</a>로 문의할 수 있습니다.<br />학년과 사용하는 기기, 궁금한 내용을 함께 알려 주세요.</p><p>현재 공개 베타로 운영 중이며, 시작 화면에 검수 중인 문제 안내가 표시될 수 있습니다.<br />문제·해설에 오류가 의심되면 시험지와 문항 번호를 함께 알려 주세요.</p></div></details>
     </div>
   </div></section>;
 }
