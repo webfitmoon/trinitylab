@@ -406,15 +406,15 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .check-progress-bar{display:block;width:100%;height:8px;accent-color:var(--primary);margin:0 0 32px}.check-navigation{display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap}.study-check legend{scroll-margin-top:120px}.study-check legend:focus{outline:none}.study-check .check-result{margin-top:0}@media(max-width:767px){.check-navigation .btn{flex:1}}
 
 /* The study photo now carries the whole question section. */
-.trinity #perspective{position:relative;isolation:isolate;background:url('/media/study-review-20260909.webp') center 44%/cover no-repeat;color:#fff}
+.trinity #perspective{position:relative;isolation:isolate;padding-block:128px;background:url('/media/study-review-20260909.webp') center 44%/cover no-repeat;color:#fff}
 .trinity #perspective::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,24,12,.9) 0%,rgba(7,31,15,.82) 48%,rgba(7,25,13,.7) 100%)}
-.trinity #perspective .study-intro{display:block;max-width:720px;margin:0 auto 48px;text-align:center}
+.trinity #perspective .study-intro{display:block;max-width:720px;margin:0 auto 64px;text-align:center}
 .trinity #perspective .study-intro .section-head{align-items:center;text-align:center}
 .trinity #perspective .study-intro .section-head h2,.trinity #perspective .study-intro .section-head p{margin-inline:auto;text-align:center}
 .trinity #perspective .section-head p{color:rgba(255,255,255,.82)}
 .trinity #perspective .study-checkpoints article,.trinity #perspective .study-checkpoints article:nth-child(2),.trinity #perspective .study-checkpoints article:nth-child(3){background:rgba(10,43,21,.78);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px)}
 .trinity #perspective .study-checkpoints .label{color:#ccefc9}
-@media(max-width:767px){.trinity #perspective{background-position:62% center}.trinity #perspective::before{background:rgba(5,24,12,.82)}.trinity #perspective .study-intro{margin-bottom:32px}}
+@media(max-width:767px){.trinity #perspective{padding-block:88px;background-position:62% center}.trinity #perspective::before{background:rgba(5,24,12,.82)}.trinity #perspective .study-intro{margin-bottom:44px}}
 
 .trinity .review-walkthrough{grid-template-columns:minmax(0,1fr);max-width:900px;gap:40px}
 .trinity .record-guide{width:100%;padding:36px;background:#173f25;border-color:#2f6840;color:#fff}
@@ -473,6 +473,41 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .guide-storage summary{font-size:16px}
 .program-guide .guide-storage p{font-size:15px;margin-bottom:0;padding-bottom:24px}
 @media(max-width:900px){.guide-visual-row{grid-template-columns:1fr;gap:28px}.guide-review-cards{grid-template-columns:1fr}.guide-review-cards article{padding:24px}.guide-screen{max-width:640px;width:100%;margin-inline:auto}.guide-community{margin-top:40px}}
+.diagnosis-quiz{max-width:900px}
+.diagnosis-quiz fieldset{margin-top:24px}
+.diagnosis-choices{display:grid;gap:12px;margin-top:24px}
+.diagnosis-choice{display:flex;align-items:center;gap:16px;width:100%;padding:20px;text-align:left;border:1px solid #adc5ac;border-radius:10px;background:white;color:var(--ink);cursor:pointer;line-height:1.7}
+.diagnosis-choice>span{display:grid;place-items:center;flex:0 0 30px;height:30px;background:#edf7ed;border-radius:50%;font-weight:700;color:#245e31}
+.diagnosis-choice:hover,.diagnosis-choice[aria-pressed="true"]{background:#edf7ed;border-color:#246533}
+.diagnosis-choice:disabled{cursor:wait;opacity:.7}
+.diagnosis-type-label{color:#246533;font-weight:750;margin-bottom:8px}
+.diagnosis-result-content h2{font-size:clamp(28px,4vw,42px);margin-bottom:20px}
+.diagnosis-summary{font-size:20px;line-height:1.7}
+.diagnosis-ratios{margin:32px 0}
+.diagnosis-axis{margin:20px 0}
+.diagnosis-axis>div:first-child{display:flex;justify-content:space-between;gap:16px;margin-bottom:8px}
+.diagnosis-axis-track{height:10px;border-radius:8px;background:#dae3da;overflow:hidden}
+.diagnosis-axis-track span{display:block;height:100%;background:#859585}
+.diagnosis-axis.is-primary .diagnosis-axis-track span{background:#246533}
+.diagnosis-example{margin:28px 0;padding:22px 24px;border-left:3px solid #329a37;background:white}
+.diagnosis-example>span{font-size:13px;color:var(--muted)}
+.diagnosis-example p{margin:8px 0 0!important}
+.diagnosis-prescription article{padding:24px 0;border-top:1px solid #b9cfb9}
+.diagnosis-share,.diagnosis-other-types,.diagnosis-restart{display:flex;flex-wrap:wrap;gap:16px 24px;margin-top:24px}
+.diagnosis-share button,.diagnosis-restart button{background:none;border:0;padding:8px 0;text-decoration:underline;text-underline-offset:5px;cursor:pointer;color:#246533}
+.diagnosis-share a,.diagnosis-other-types a{padding:8px 0;color:#246533}
+.diagnosis-static{max-width:900px}
+.diagnosis-page-title{font-size:20px;margin-bottom:40px}
+@media(max-width:767px){.diagnosis-choice{padding:16px;gap:12px;font-size:16px}.diagnosis-summary{font-size:18px}.diagnosis-quiz .check-result{padding:24px 18px}.diagnosis-result-content .actions{display:grid}.diagnosis-example{padding:18px}}
+.trinity .record-section{background:#173f25;color:#fff}
+.record-section .section-head p{color:#e2eee2}
+.record-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.record-cards article{display:flex;align-items:flex-start;gap:24px;padding:36px;border:1px solid #527b5c;border-radius:14px;background:#285335;min-width:0}
+.record-icon{display:grid;place-items:center;flex:0 0 56px;height:56px;border-radius:14px;background:#3e6a49;color:#fff}
+.record-icon svg{width:30px;height:30px}
+.record-cards h3{font-size:24px;color:#fff}
+.record-cards p{margin-top:14px;color:#fff;line-height:1.85}
+@media(max-width:767px){.record-cards{grid-template-columns:1fr;gap:16px}.record-cards article{padding:28px 24px;gap:20px;flex-direction:column}.record-icon{flex-basis:48px;width:48px;height:48px}.record-icon svg{width:26px;height:26px}.record-cards h3{font-size:22px}}
 .home-faq-layout{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:64px;align-items:start}
 .home-faq-layout .section-head{margin:0;gap:20px}
 .home-faq-layout .faq{width:100%;min-width:0;margin:0;border-top:1px solid var(--border)}

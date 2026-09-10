@@ -3,6 +3,7 @@ import HeroSection from "../components/hero-section";
 import PerspectiveSection from "../components/perspective-section";
 import ProgramSection from "../components/program-section";
 import TrainingSection from "../components/training-section";
+import RecordSection from "../components/record-section";
 import BenefitsSection from "../components/benefits-section";
 import HomeFaqSection from "../components/home-faq-section";
 import StartSection from "../components/start-section";
@@ -14,6 +15,7 @@ export default function HomePage() {
     <main id="main"><HeroSection />
 <PerspectiveSection />
 <TrainingSection />
+<RecordSection />
 <ProgramSection />
 <BenefitsSection />
 <HomeFaqSection />
