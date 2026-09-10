@@ -536,3 +536,15 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .program-guide-compact .guide-visual-row{margin-top:0;align-items:center}
 .program-guide-compact .guide-storage{margin-top:24px}
 .program-guide-compact .actions{align-items:center}
+
+/* Trial device, login, and usage guidance. */
+.subpage-grid.trial-info-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.trial-info-cards article { min-width: 0; padding: 32px; border: 1px solid #d7e6d0; border-radius: 12px; background: #fff; }
+.trial-info-icon { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; margin-bottom: 24px; border-radius: 12px; background: var(--page-accent); color: #fff; }
+.trial-info-icon svg { width: 28px; height: 28px; }
+.trial-info-cards h3 { text-wrap: balance; }
+.trial-info-cards p { margin-bottom: 0; text-wrap: pretty; }
+@media (max-width: 1023px) {
+ .subpage-grid.trial-info-cards { grid-template-columns: 1fr; }
+ .trial-info-cards article { padding: 28px; }
+}
