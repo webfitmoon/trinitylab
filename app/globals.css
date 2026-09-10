@@ -499,8 +499,8 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .diagnosis-static{max-width:900px}
 .diagnosis-page-title{font-size:20px;margin-bottom:40px}
 @media(max-width:767px){.diagnosis-choice{padding:16px;gap:12px;font-size:16px}.diagnosis-summary{font-size:18px}.diagnosis-quiz .check-result{padding:24px 18px}.diagnosis-result-content .actions{display:grid}.diagnosis-example{padding:18px}}
-.trinity .record-section{background:#173f25;color:#fff}
-.record-section .section-head p{color:#e2eee2}
+.trinity .record-section{background:#fff;color:var(--ink)}
+.record-section .section-head p{color:var(--muted)}
 .record-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .record-cards article{display:flex;align-items:flex-start;gap:24px;padding:36px;border:1px solid #527b5c;border-radius:14px;background:#285335;min-width:0}
 .record-icon{display:grid;place-items:center;flex:0 0 56px;height:56px;border-radius:14px;background:#3e6a49;color:#fff}
