@@ -14,7 +14,7 @@ export default function ProgramGuide() {
       </div>
       <Screen src="/media/math-shelf-20260905.png" alt="시험지·단원·문항 번호로 기출을 고르는 실제 앱 화면" caption="시험지·단원·문항 번호로 기출 선택" />
     </div></section>
-    <section className="subpage-block subpage-tint" id="retry"><div className="wrap guide-visual-row">
+    <section className="subpage-block" id="retry"><div className="wrap guide-visual-row">
       <div id="handwriting">
         <h2>직접 풀고,<br />막히면 힌트로 다시 생각하세요.</h2>
         <p>태블릿과 펜으로 문제 위에 풀이를 적어보세요.<br />막힌 문제는 해설을 보기 전에 힌트로 한 번 더 시도해 보세요.</p>
@@ -30,7 +30,7 @@ export default function ProgramGuide() {
       </div>
       <Screen src="/media/app-home-1180.png" alt="다른 학생들이 올린 풀이를 살펴보는 실제 앱 화면" caption="같은 문제를 푼 다른 학생의 풀이 비교" />
     </div></section>
-    <section className="subpage-block subpage-tint"><div className="wrap">
+    <section className="subpage-block program-guide-cta"><div className="wrap">
       <h2>오늘 공부할 문제부터 골라보세요.</h2>
       <p>공개 베타에서 무료로 시작할 수 있습니다.</p>
       <div className="actions"><a className="btn" href="https://111sm.app/mathematics">문제 풀어보기</a><Link className="text-link" href="/trial">처음 이용하는 방법</Link></div>
