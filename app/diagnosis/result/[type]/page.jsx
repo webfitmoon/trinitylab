@@ -1,3 +1,4 @@
+import SiteFooter from "../../../../components/site-footer";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import SiteHeader from "../../../../components/site-header";
@@ -13,5 +14,5 @@ export async function generateMetadata({ params }) {
 export default async function ResultPage({ params }) {
   const { type } = await params;
   if (!["a","b","c"].includes(type)) notFound();
-  return <><a className="skip" href="#main">본문으로 바로가기</a><SiteHeader /><main id="main" className="section"><div className="wrap diagnosis-static"><h1 className="diagnosis-page-title">학습 유형 안내</h1><DiagnosisResult type={type.toUpperCase()} /><div className="actions"><Link className="btn secondary" href="/diagnosis">내 공부 습관 점검하기</Link></div></div></main></>;
+  return <><a className="skip" href="#main">본문으로 바로가기</a><SiteHeader /><main id="main" className="section"><div className="wrap diagnosis-static"><h1 className="diagnosis-page-title">학습 유형 안내</h1><DiagnosisResult type={type.toUpperCase()} /><div className="actions"><Link className="btn secondary" href="/diagnosis">내 공부 습관 점검하기</Link></div></div></main><SiteFooter /></>;
 }

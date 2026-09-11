@@ -1,3 +1,4 @@
+import SiteFooter from "../components/site-footer";
 import SiteHeader from "../components/site-header";
 import HeroSection from "../components/hero-section";
 import PerspectiveSection from "../components/perspective-section";
@@ -20,6 +21,6 @@ export default function HomePage() {
 <LearningChangeSection />
 <HomeFaqSection />
 <StartSection /></main>
-    <footer className="footer"><div className="wrap"><strong>{"트리니티에듀랩"}</strong><p>{"© 2026 트리니티에듀랩"}</p></div></footer>
+    <SiteFooter />
   </>;
 }
