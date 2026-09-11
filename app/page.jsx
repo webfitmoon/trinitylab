@@ -4,7 +4,7 @@ import PerspectiveSection from "../components/perspective-section";
 import ReassuranceSection from "../components/reassurance-section";
 import ProgramSection from "../components/program-section";
 import TrainingSection from "../components/training-section";
-import RecordSection from "../components/record-section";
+import LearningChangeSection from "../components/learning-change-section";
 import HomeFaqSection from "../components/home-faq-section";
 import StartSection from "../components/start-section";
 
@@ -17,7 +17,7 @@ export default function HomePage() {
 <TrainingSection />
 <ReassuranceSection />
 <ProgramSection />
-<RecordSection />
+<LearningChangeSection />
 <HomeFaqSection />
 <StartSection /></main>
     <footer className="footer"><div className="wrap"><strong>{"트리니티에듀랩"}</strong><p>{"© 2026 트리니티에듀랩"}</p></div></footer>
