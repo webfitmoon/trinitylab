@@ -296,7 +296,7 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .trinity .hero-copy h1{max-width:1000px}
 .trinity .hero-copy .lead{max-width:760px}
 .trinity .hero-copy .actions{justify-content:center}
-.trinity .hero-stack .video-demo{width:100%;max-width:1000px;margin:0}
+.trinity .hero-stack .video-demo{width:100%;max-width:1000px;margin:0;background:var(--primary);border-color:var(--primary)}
 @media(max-width:767px){.trinity .hero-stack{gap:32px}}
 
 /* Full-bleed learning imagery inspired by the Mansmoment closing banners. */
