@@ -1,4 +1,5 @@
 import "./globals.css";
+import PageMotion from "../components/page-motion";
 
 export const viewport = { colorScheme: "light" };
 
@@ -15,5 +16,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="ko"><body className="trinity">{children}</body></html>;
+  return <html lang="ko"><body className="trinity">{children}<PageMotion /></body></html>;
 }

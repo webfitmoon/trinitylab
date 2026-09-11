@@ -559,3 +559,28 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .program-guide-cta .btn:hover { background: #edf7ed; border-color: #edf7ed; }
 .program-guide-cta .text-link { margin-top: 0; text-decoration: underline; text-underline-offset: 4px; }
 .program-guide-cta a:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
+
+/* Progressive motion: copy remains visible when JavaScript is unavailable. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion-pending] { opacity: 0; }
+}
+.trinity #perspective { overflow: clip; background: #102712; }
+.perspective-backdrop { position: absolute; inset: -80px 0; z-index: -2; pointer-events: none; background: url('/media/study-review-20260909.webp') center 44% / cover no-repeat; transform: translate3d(0, var(--parallax-y, 0px), 0); }
+.trinity .final-panel-link { position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+.trinity .final-panel-link:focus-visible { outline: 3px solid #fff; outline-offset: -8px; }
+.trinity .final-panel .final-status a { position: relative; z-index: 2; }
+.trinity .final-panel-image { transition: transform 200ms ease-out; }
+.trinity .final-panel:has(.final-panel-link:focus-visible) .final-panel-image { transform: scale(1.05); }
+@media (hover: hover) and (pointer: fine) {
+  .trinity .final-panel:hover .final-panel-image { transform: scale(1.05); }
+  .trinity .final-panel:hover .btn { background: var(--tint); border-color: var(--tint); }
+}
+@media (max-width: 767px), (pointer: coarse) {
+  .perspective-backdrop { inset: 0; background-position: 62% center; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-motion-pending] { opacity: 1; }
+  .perspective-backdrop, .trinity .final-panel:hover .final-panel-image,
+  .trinity .final-panel:has(.final-panel-link:focus-visible) .final-panel-image { transform: none; }
+}
+@media print { [data-motion-pending] { opacity: 1 !important; } }
