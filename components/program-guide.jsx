@@ -33,7 +33,7 @@ export default function ProgramGuide() {
     <section className="subpage-block program-guide-cta"><div className="wrap">
       <h2>오늘 공부할 문제부터 골라보세요.</h2>
       <p>공개 베타에서 무료로 시작할 수 있습니다.</p>
-      <div className="actions"><a className="btn" href="https://111sm.app/mathematics">문제 풀어보기</a><Link className="text-link" href="/trial">처음 이용하는 방법</Link></div>
+      <div className="actions"><a className="btn" href="https://111sm.app/">문제 풀어보기</a><Link className="text-link" href="/trial">처음 이용하는 방법</Link></div>
     </div></section>
   </div>;
 }
