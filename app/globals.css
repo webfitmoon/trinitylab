@@ -613,3 +613,8 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .program-guide .record-cards p{margin-top:10px;margin-bottom:0}
 .program-guide .record-section .section-head h2{margin-bottom:0}
 @media(max-width:767px){.learning-comparison{grid-template-columns:1fr;gap:16px}.learning-arrow{text-align:left;transform:rotate(90deg);width:28px}.learning-after{padding-left:16px}.learning-takeaway{font-size:20px}.learning-example-label{font-size:12px}}
+
+/* Reference TML emblem, cropped to its circular boundary. */
+.brand-logo .brand-emblem{position:relative;display:block;flex:0 0 44px;width:44px;height:44px;overflow:hidden;border-radius:50%;background:#183c24}
+.brand-logo .brand-emblem img{position:absolute;width:125%;height:125%;max-width:none;left:-12.5%;top:-11.5%}
+@media(max-width:767px){.brand-logo .brand-emblem{flex-basis:38px;width:38px;height:38px}}
