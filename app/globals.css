@@ -186,7 +186,8 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .mathskim #programs .btn.secondary{background:transparent;color:#fff;border-color:#aaa29a}
 .mathskim #programs .btn.secondary:hover{background:#26221e}
 .trinity .hero,.trinity #program,.trinity #proof,.trinity #start{background:#fff}
-.trinity #perspective,.trinity #training,.trinity #faq{background:var(--tint)}
+.trinity #perspective,.trinity #training{background:var(--tint)}
+.trinity #faq{background:#fff}
 .trinity #comparison{background:var(--primary);color:#fff}
 .trinity #comparison .section-head p,.trinity #comparison .comparison-note,.trinity #comparison .caption{color:#fff}
 .trinity #comparison .study-comparison{color:var(--ink);background:#fff;border-radius:12px;overflow:hidden}
