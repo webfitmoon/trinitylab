@@ -584,3 +584,11 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
   .trinity .final-panel:has(.final-panel-link:focus-visible) .final-panel-image { transform: none; }
 }
 @media print { [data-motion-pending] { opacity: 1 !important; } }
+
+/* English wordmark and three-part learning symbol. */
+.trinity .brand-logo{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;letter-spacing:0}
+.brand-logo img{display:block;width:42px;height:42px}
+.brand-wordmark{display:flex;flex-direction:column;gap:3px;line-height:1;font-family:Arial,Helvetica,sans-serif;color:#183c24}
+.brand-wordmark>span:first-child{font-size:22px;font-weight:800;letter-spacing:.015em}
+.brand-wordmark>span:last-child{font-size:12px;font-weight:700;letter-spacing:.3em}
+@media(max-width:767px){.trinity .brand-logo{gap:8px}.brand-logo img{width:36px;height:36px}.brand-wordmark>span:first-child{font-size:20px}.brand-wordmark>span:last-child{font-size:11px}}
