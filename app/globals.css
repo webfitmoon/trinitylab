@@ -97,7 +97,7 @@
 .trinity .final-panel .heading-with-icon{align-items:center}
 .trinity .final-panel .icon-marker{background:transparent;color:inherit;border:1px solid currentColor}
 
-.trinity .final-section{padding-bottom:0}
+.trinity .final-section{padding:0}
 .trinity .final-section>.wrap{width:100%;max-width:none}
 .trinity .final-section .section-head{width:min(100% - 80px,1200px);margin:0 auto 48px}
 .trinity .final-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
